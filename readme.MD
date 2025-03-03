@@ -1,6 +1,6 @@
 # Resume Kode Aplikasi To-Do List
 
-Aplikasi ini adalah aplikasi **To-Do List** yang memungkinkan pengguna untuk menambahkan, menyimpan, menandai sebagai selesai, menghapus, dan mengembalikan tugas yang telah selesai. Aplikasi ini juga menggunakan **local storage** untuk menyimpan data sehingga tidak hilang ketika halaman dimuat ulang.
+Website ini adalah project **To-Do List** sederhana yang memungkinkan pengguna untuk menambahkan, menyimpan, menandai sebagai selesai, menghapus, dan mengembalikan tugas yang telah selesai. Project ini juga menggunakan **local storage** untuk menyimpan data sehingga tidak hilang ketika halaman dimuat ulang.
 
 ---
 
