@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #AD49E1;
+  --secondary-color: #5F30E2;
+  --background-color: #EBD3F8;
+  --text-color: #2E073F;
+  --white-color: #FFF;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--primary-color);
+  padding: 16px;
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.wrapper .container {
+  width: 90%;
+  max-width: 1024px;
+  border-radius: 8px;
+  margin: 16px;
+  background: var(--white-color);
+  padding: 20px;
+  flex-grow: 1;
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.item {
+  border-radius: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primary-color);
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.item > .inner h2 {
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.item > .inner p {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  border-radius: 12px;
+  background: var(--white-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: var(--text-color);
+}
+
+input[type="text"], input[type="date"] {
+  font-family: 'Raleway', sans-serif;
+  background: var(--background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 18px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+.btn-submit {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 12px 24px;
+  border: 2px solid var(--secondary-color);
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-end;
+}
+
+.btn-submit:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.check-button,
+.trash-button,
+.undo-button {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.check-button:hover,
+.trash-button:hover,
+.undo-button:hover {
+  transform: scale(1.1);
+}
+
+.check-button {
+  background: url('../assets/check-outline.svg');
+}
+
+.check-button:hover {
+  background: url('../assets/check-solid.svg');
+}
+
+.trash-button {
+  background: url('../assets/trash-outline.svg');
+  margin-left: 16px;
+}
+
+.trash-button:hover {
+  background: url('../assets/trash-fill.svg');
+}
+
+.undo-button {
+  background: url('../assets/undo-ouline.svg');
+}
+
+.undo-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 8px;
+  }
+
+  .wrapper .container {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .form {
+    padding: 16px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
